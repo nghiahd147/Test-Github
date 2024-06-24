@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git</title>
+</head>
+<body>
+    <!-- 
+        Git là một hệ thống quản lý phiên bản phân tán (nghĩa là dùng để tạo ra các phiên bản khác nhau)
+        Git cung cấp cho mỗi lập trình viên kho lưu trữ riêng chứa toàn bộ lịch sử thay đổi
+        -> Git 
+    -->
+
+    <!-- Các thuật ngữ, gồm 3 thuật ngữ: 
+        Working directory(Khu vực làm việc): Khu vực chứa dự án đang làm việc
+        Staging area(Khu vực sắp xếp): khu vực chứa thông tin thay đổi các file
+        Repository(Git directory - thư mục git): Kho lưu trữ dữ liệu, lịch sử các phiên bản
+    -->
+
+    <!-- 
+    Mở command lên để chạy thử *
+    Các câu lệnh git làm quen:
+        git--version: xem phiên bản hiện tại được cài trên máy tính
+        git--help: xem danh sách câu lệnh git
+        git config: để đặt username và email của bạn trong file config của git (Không quan trọng nó chỉ để xem thông tin git của chúng ta)
+         + Để xem thông tin cấu hình username: git config --global user.name
+         + Để xem thông tin cấu hình email: git config --global user.email
+         + Để đặt username mới: git config --global user.name "Tăng Quang Nghĩa"
+         + Để đặt email mới: git config --global user.name "qn500787@gmail.com"
+    -->
+
+    <!-- 
+
+
+    Bật Terminal của folder đó lên
+    Các câu lệnh git chính:
+
+        ----- Khởi tạo file git và kiểm tra phiên bản
+        * git init: dùng để khởi tạo 1 repository(kho lưu trữ) dạng ẩn, chúng ta không cần quan tâm bên trong có gì 
+        (nếu muốn xem ấn chuột phải folder chọn Reveal in File... và trong View cấu hình lại hiển thị file ẩn)
+        (nếu tạo nhầm thì vào thư mục xóa cái file đó đi rồi tạo lại)
+        Lưu ý là khởi tạo phải ở thằng folder cha không đc khỏi tạo thằng folder con và không được tạo 2 lần
+
+        * git status: dùng để xem lịch sử file thay đổi
+        (nếu thư mục hiển thị ra là màu đỏ thì nó đang ở "working directory")
+        (để chuyển về khu vực "staging area" thì cần dùng câu lênh add ở dưới)
+
+        ----- Chuyển đổi khu vực "working directory" sang "staging area"
+
+        * git add ten_file: thông tin của các file sẽ được lưu vào "staging area" nó có tác dụng sắp xếp các file đã vào
+        * git add . : thêm thay đổi cho tất cả các file
+        (bình thường 1 file chưa thêm vào nó sẽ báo màu đỏ tên file đó vì nó đang ở khu vực "working directory" là nới chứa 
+        dự án đang làm việc ta cần dùng câu lệnh này để chuyển nó về "staging area" khu vực sắp xếp, chứa ls thay đổi) 
+        (trong trường hợp nếu khi ta chuyển sang khu vực "staging area" rồi mà ta lại quay lại sửa thêm chữ hay có sự thay đổi
+        trong file ấy nó sẽ không lưu lại luôn cho chúng ta và chỉ lưu lại cái file cũ chưa thay đổi. 
+        -> Cho nên sau khi thay đổi ta cần chạy lại câu lệnh git add . để nó cập nhật lại)
+    
+        ----- Chuyển đổi khu vực "staging area" sang "repository"
+
+        *git commit -m "Nội dung": dùng để đưa những file ở khu vực "staging area" sang khu vực "repository", mục đích là để tạo
+        ra một hiên bản mới vào lịch sử lưu trữ của repository
+        (với điều kiện các tập tin thay đổi phải nằm trong vùng "staging area")
+
+    -->
+
+    <!-- Mẹo lấy câu lệnh nhanh hơn trong Terminal
+        - Sử dụng dấu mũi tên lên xuống trên bàn phím để lấy các câu lệnh đã gõ trước đó vào ô chạy lệnh hiện tại 
+    -->
+
+</body>
+</html>
