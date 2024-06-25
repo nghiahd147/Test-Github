@@ -86,7 +86,24 @@
 
         *git reset ten_file: Chuyển file từ vùng 'staging area' trở lại vùng 'working directory'
 
-        *git reset --soft ten_file: Chuyển file từ vùng 'repository' trở lại vùng 'staging area'
+        *git reset --soft commit_id: Chuyển file từ vùng 'repository' trở lại vùng 'staging area'
+
+        *git reset --mixed commit_id: Chuyển file từ vùng 'repository' trở lại vùng 'working directory'
+    -->
+
+    <!-- 
+        Các câu lệnh git phân chia nhánh: Trong 1 cty người ta sẽ tạo ra các nhánh để giao cho người làm
+        Ví dụ có các nhánh: Master(xanh lá), YourWork(xanh dương), Someone Else Work(màu cam)
+        Master là nhánh chính (tưởng tượng là anh leader), giao cho mình làm 1 nhánh xanh dương vd như làm login, xong sau đó
+        leader kiểm tra nếu ok thì leader sẽ cho vào nhánh chính là master
+        
+        *git branch: Xem danh sách các nhánh
+
+        *git checkout -b ten_nhanh: Tạo ra 1 nhánh mới
+
+        *git checkout ten_nhanh: Chuyển sang 1 nhánh khác
+        (nếu ta tạo file bên 1 nhánh khác rồi chuyển sang 1 nhánh khác thì cái file tạo bên nhánh khác sẽ không hiện ra ở kia)
+
     -->
 
     <!-- Mẹo lấy câu lệnh nhanh hơn trong Terminal
